@@ -9,18 +9,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class SpringBootTopGearProjectApplication implements CommandLineRunner {
-	
-	 @Autowired
-	    private ApplicationContext appContext;
+public class Application implements CommandLineRunner {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootTopGearProjectApplication.class, args);
-	}
-	
-	//Assignement 1 - Part 3
-	//Prints the list of all the default beans that were created by Spring Boot automatically in the console
-	@Override
+    @Autowired
+    private ApplicationContext appContext;
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Application.class, args);
+    }
+
+    @Override
     public void run(String... args) throws Exception {
 
         String[] beans = appContext.getBeanDefinitionNames();

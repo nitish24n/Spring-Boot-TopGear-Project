@@ -12,11 +12,13 @@ public class BankController {
 	@Autowired
 	BankService bank;
 	
+	//Assignment 1 - Part 1
 	@GetMapping("/name")
 	public String getBankName(){
 		return "State Bank Of India";
 	}
 	
+	//Assignment 1 - Part 2
 	@GetMapping("/address")
 	public String getBankAddress(){
 		return "Street No. 15, Greater Noida, Delhi";
