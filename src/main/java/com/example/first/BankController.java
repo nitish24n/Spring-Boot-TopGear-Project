@@ -8,10 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/bank")
 public class BankController {
-	
-	@Autowired
-	BankService bank;
-	
+		
 	//Assignment 1 - Part 1
 	@GetMapping("/name")
 	public String getBankName(){

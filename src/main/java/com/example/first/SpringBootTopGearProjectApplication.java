@@ -25,6 +25,7 @@ public class SpringBootTopGearProjectApplication implements CommandLineRunner {
 
         String[] beans = appContext.getBeanDefinitionNames();
         Arrays.sort(beans);
+        System.out.println("BEANS CREATED -------------");
         for (String bean : beans) {
             System.out.println(bean);
         }
