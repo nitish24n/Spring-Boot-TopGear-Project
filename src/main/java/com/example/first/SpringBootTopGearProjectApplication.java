@@ -12,7 +12,7 @@ import org.springframework.context.ApplicationContext;
 public class SpringBootTopGearProjectApplication implements CommandLineRunner {
 	
 	 @Autowired
-	 private ApplicationContext appContext;
+	    private ApplicationContext appContext;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootTopGearProjectApplication.class, args);
